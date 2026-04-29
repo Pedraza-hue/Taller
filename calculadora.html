@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculadora</title>
+    <body>
+        <h2>Calculadora</h2>
+        <input type="number" id="numero1" placeholder="Numero 1">
+        <input type="number" id="numero2" placeholder="Numero 2">
+
+        <h3 id="Resultado">Resultado</h3>
+        <button onclick="sumar()">+</button>
+        <script>
+            function sumar(){
+                let n1 = parseFloat(document.getElementById("numero1").value);
+                let n2 = parseFloat(document.getElementById("numero2").value);
+                let resultado =n1 + n2;
+                document.getElementById("Resultado").textContent="Resultado: " + resultado;
+                return n1+n2;
+
+            } 
+        </script>
+        <button onclick="restar()">-</button>
+        <script>
+            function restar(){
+                let n1 = parseFloat(document.getElementById("numero1").value);
+                let n2 = parseFloat(document.getElementById("numero2").value);
+                let resultado =n1 - n2;
+                document.getElementById("Resultado").textContent="Resultado: " + resultado;
+                return n1-n2;
+
+            }    
+        </script> 
+        <button onclick="multiplicacion()">*</button>
+        <script>
+            function multiplicacion(){
+                let n1 = parseFloat(document.getElementById("numero1").value);
+                let n2 = parseFloat(document.getElementById("numero2").value);
+                let resultado =n1 * n2;
+                document.getElementById("Resultado").textContent="Resultado: " + resultado;
+                return n1*n2;
+
+            }    
+        </script>
+        <button onclick="division()">/</button>
+        <script>
+            function division(){
+                let n1 = parseFloat(document.getElementById("numero1").value);
+                let n2 = parseFloat(document.getElementById("numero2").value);
+                let resultado =n1/n2;
+                document.getElementById("Resultado").textContent="Resultado: " + resultado;
+                return n1/n2;   
+            }
+        </script>
+        
+
+
+    </body>
+</html>
